@@ -8,6 +8,17 @@
 html{
   scroll-behavior: smooth;
 }
+.me, .mea{
+  color: red;
+}
+.reserve{
+  width: 370px;
+  border: 1px solid red;
+  border-radius: 2px;
+  opacity: 0.3px;
+  
+
+}
 </style>
 <body>
 
@@ -46,6 +57,70 @@ html{
         </div>
     </div>
   </div>
+</div>
+
+<div class="container reserveation ">
+ 
+    <h2> Ready? Reserve a room Now </h2>
+    <div class="reserve">
+        
+      <form class="form-group">
+        <div class="checkin-date">
+          <h3 class="me"> Check In </h3>
+          <input type="date" id="checkin" class="form-control" name="checkin">
+        </div>
+
+        <div class="checkin-date">
+          <h3 class="me"> Check Out </h3>
+          <input type="date" id="checkin" class="form-control" name="checkin">
+        </div>
+
+        <div class="checkout-date">
+          <div class="headr">
+            <h3 class="me"> Rooms </h3>
+          </div>
+          <input type="date" id="checkin" class="form-control" name="checkin">
+        </div>
+
+        <div class="checkout-date">
+          <h3 class="me">Rooms</h3>
+
+          <select name="rooms" id="rooms">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+          </select>
+          </div>
+
+          <div class="family d-flex padding">
+              <div class="adults">
+                <p class="mea" >Adults </p>
+                <select name="adults" id="adults">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+              </div>
+
+              <div class="adults ">
+                <p class="mea" >Children </p>
+                <select name="children" id="children">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+              </div>
+          </div>
+        </div>
+
+      </form>
+
+    </div>
+
+
 </div>
 
 
