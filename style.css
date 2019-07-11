@@ -1,7 +1,9 @@
 *{
     font-family: 'century gothic';
   }
-  
+  htnl{
+    scroll-behavior: smooth;
+  }
   .serv{
     background-color: rgb(139, 139, 139);
   }
@@ -106,7 +108,7 @@
   color: white;
   }
   .red-btn{
-    background-color; red;
+    background-color: red;
   }
   
   #team img {

@@ -5,7 +5,9 @@
 <?php include 'includes/files/head.php'; ?>
 </head>
 <style>
-
+html{
+  scroll-behavior: smooth;
+}
 </style>
 <body>
 
@@ -52,7 +54,7 @@
   <div class="container my-3 py-5 text-center ">
     <div class="row mb-5">
       <div class="col">
-        <h1> DIRECTORS </h1>
+        <h3>MEET OUR TEAM</h3>
         <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
           Id ut omnis distinctio magni reprehenderit! Facilis,
            blanditiis at modi maxime obcaecati
@@ -182,40 +184,40 @@
 
 
 <div class="container-fluid text-center works" id="services">
-<h2>SERVICES</h2>
+<h3>SERVICES</h3>
 <h4>What we offer</h4>
 <br>
 <div class="row">
   <div class="col-sm-4">
-    <i class="fa fa-lock"></i>
-    <h4>POWER</h4>
+    <i class='fa fa-car ' style='font-size:65px; color:red;'></i>
+    <h4>Car Rental</h4>
     <p>Lorem ipsum dolor sit amet..</p>
   </div>
   <div class="col-sm-4">
-    <i class="fa fa-heart"></i>
-    <h4>LOVE</h4>
+  <i class='fas fa-hamburger' style='font-size:65px; color:red;'></i>
+    <h4>Catering</h4>
     <p>Lorem ipsum dolor sit amet..</p>
   </div>
   <div class="col-sm-4">
-    <i class="fa fa-lock"></i>
-    <h4>JOB DONE</h4>
+    <i class='fa fa-user-md' style='font-size:65px; color:red;'></i>
+    <h4>Doctor On Call</h4>
     <p>Lorem ipsum dolor sit amet..</p>
   </div>
 </div>
 <br><br>
 <div class="row">
   <div class="col-sm-4">
-    <i class="fa fa-leaf"></i>
-    <h4>GREEN</h4>
+    <i class='fa fa-tour' style='font-size:65px; color:red;'></i>
+    <h4>Tours & Travels</h4>
     <p>Lorem ipsum dolor sit amet..</p>
   </div>
   <div class="col-sm-4">
-    <i class="fa fa-code"></i>
+    <i class='fa fa-code' style='font-size:65px; color:red;'></i>
     <h4>CERTIFIED</h4>
     <p>Lorem ipsum dolor sit amet..</p>
   </div>
   <div class="col-sm-4">
-    <i class="fa fa-facebook"></i>
+    <i class='fa fa-facebook' style='font-size:65px; color:red;'></i>
     <h4 style="color:#303030;">HARD WORK</h4>
     <p>Lorem ipsum dolor sit amet..</p>
   </div>
@@ -224,7 +226,7 @@
 
 
   <div class="container-fluid bg-grey  contact" id="contactus">
-    <h2 class="text-center">CONTACT</h2>
+    <h3 class="text-center">CONTACT US</h3>
     <div class="row">
       <div class="col-sm-5">
         <p><i class="fa fa-map-marker"></i>  <br>
@@ -259,16 +261,16 @@
       </div>
     </div>
   </div>
-<!---------
 
-Set height and width with CSS 
-<div id="googleMap" style="height:400px;width:100%;"></div>
 
-Add Google Maps 
+
+<div id="googleMap" style="height:300px;width:100%;"></div>
+
+
 <script src="http://maps.googleapis.com/maps/api/js"></script>
 
 <script>
-var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+var myCenter = new google.maps.LatLng(0.081391, 32.482661);
 function initialize() {
 var mapProp = {
 center:myCenter,
@@ -285,7 +287,28 @@ marker.setMap(map);
 }
 google.maps.event.addDomListener(window, 'load', initialize);
 </script>
---->
+
+<script>
+// Scroll to specific values
+// scrollTo is the same
+window.scroll({
+    top: 2500, 
+    left: 0, 
+    behavior: 'smooth'
+  });
+  
+  // Scroll certain amounts from current position 
+  window.scrollBy({ 
+    top: 100, // could be negative value
+    left: 0, 
+    behavior: 'smooth' 
+  });
+  
+  // Scroll to a certain element
+  document.querySelector('.hello').scrollIntoView({ 
+    behavior: 'smooth' 
+  });
+  </script>
 <?php include 'includes/files/footer.php' ?>
 </body>
 </html>
