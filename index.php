@@ -9,15 +9,22 @@ html{
   scroll-behavior: smooth;
 }
 .me, .mea{
-  color: red;
+  color: white;
 }
 .reserve{
   width: 370px;
   border: 1px solid red;
   border-radius: 2px;
+  border-width: 0px solid grey;;
   opacity: 0.3px;
-  
+}
 
+.reserveation{
+  background-image:url('assets/images/slider2.jpg');
+  width: 100%;
+}
+.reserveation h2{
+  color: white;
 }
 </style>
 <body>
@@ -59,7 +66,7 @@ html{
   </div>
 </div>
 
-<div class="container reserveation ">
+<div class="container-fluid reserveation " id="reserveation">
  
     <h2> Ready? Reserve a room Now </h2>
     <div class="reserve">
@@ -104,7 +111,7 @@ html{
                 </select>
               </div>
 
-              <div class="adults ">
+              <div class="adults   https://github.com/okotdaniel/redrosterhotels.git">
                 <p class="mea" >Children </p>
                 <select name="children" id="children">
                   <option>1</option>
@@ -114,6 +121,8 @@ html{
                 </select>
               </div>
           </div>
+          <br>
+          <button class="btn btn-primary ">Check Availability</button>
         </div>
 
       </form>
