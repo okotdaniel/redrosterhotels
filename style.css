@@ -1,0 +1,141 @@
+*{
+    font-family: 'century gothic';
+  }
+  
+  .serv{
+    background-color: rgb(139, 139, 139);
+  }
+  
+  a{
+  color: red;
+  }
+  .bg-grey{
+  background-color: grey;
+  }
+  
+  li{
+    list-style-type: none;
+  }
+  li a{
+  color: black;
+  font-weight: bold;
+  }
+  .section-title{
+    color: rgb(182, 182, 182);
+    margin-left: 30px;
+  }
+  
+  .jumbotron{
+    height:500px;
+    background-color: rgb(219, 219, 219);
+    color: rgb(57, 38, 236);
+  }
+  .container-fluid{
+  padding: 70px 50px;
+  }
+  .links{
+  margin-left: 30px;
+  }
+  .fa{
+    font-size: 25px;
+    color: red;
+  }
+  
+  footer{
+    text-align: left;
+    background-color: rgb(53, 53, 53);
+    color: rgb(12, 12, 12);
+    padding: 12px;
+    width: 100%;
+    margin-left: 20px;
+  }
+  
+  footer p{
+    margin-left: 50px;
+    color: rgb(182, 182, 182);
+  }
+  h4{
+    margin: 10px 0px 30px;
+    font-size: 19px;
+    margin-bottom: 30px;
+  }
+  p{
+  margin: 0 0 10px;
+  }
+  .bg-grey{
+  background-color: rgb(243, 243, 243);
+  }
+  footer .fa{
+  font-size: 30px;
+  padding: 10px;
+  color: white;
+  background-color: rgb(248, 48, 48);
+  height: 50px;
+  width: 50px;
+  }
+  .works{
+  background-color: rgb(230, 230, 230);
+  }
+  .works .fa{
+  font-size: 70px;
+  color: red;
+  }
+  .login{
+  margin-top: 89px
+  }
+  
+  ul{
+  margin-top: 15px;
+  padding: 0px;
+  }
+  
+  .nav-logo{
+  height: 40px;
+  width: 200px;
+  
+  }
+  
+  .positioned{
+  margin-top: 32px;
+  }
+  .form-control{
+    margin-left:15px;
+  }
+  form{
+  margin: 50px 50px;
+  color: white;
+  }
+  .red-btn{
+    background-color; red;
+  }
+  
+  #team img {
+    height: 100px;
+    margin-top: -50px;
+    border: 2px solid red;
+    box-shadow: 3px 3px 3px red;
+  }
+  #team i{
+    font-size: 25px;
+    color: red;
+  }
+  #team p{
+    font-weight: 400;
+  }
+  #team .card{
+    box-shadow: 3px 3px 10px red;
+    border-radius: 0px;
+    transition: all .3s;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+  }
+  #team .card:hover{
+    background: red;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 5px 5px 3px grey;
+  }
+  #team .card:hover h3, #team .card:hover i{
+    color: #fff;
+  }
