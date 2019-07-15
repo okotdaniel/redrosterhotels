@@ -15,8 +15,10 @@ html{
   width: 370px;
   border: 1px solid red;
   border-radius: 2px;
-  border-width: 0px solid grey;;
-  opacity: 0.3px;
+  border-width: 0px solid grey;
+  background-color: red;
+  opacity: 0.54;
+  border-radius: 10px;
 }
 
 .reserveation{
@@ -82,13 +84,7 @@ html{
           <input type="date" id="checkin" class="form-control" name="checkin">
         </div>
 
-        <div class="checkout-date">
-          <div class="headr">
-            <h3 class="me"> Rooms </h3>
-          </div>
-          <input type="date" id="checkin" class="form-control" name="checkin">
-        </div>
-
+       
         <div class="checkout-date">
           <h3 class="me">Rooms</h3>
 
@@ -323,9 +319,24 @@ html{
         Tel:  +256 757076371 </p>
         <p><i class="fa fa-envelope"></i> info@rerosterhotels.com</p> 
       </div>
+
+        <?php 
+          $mysqli = new mysqli('localhost', 'root', '', 'redroster') or 
+          die(mysqli_error($mysqli));
+
+          if(isset($_POST['submit'])){
+              $names = $_POST['names'];
+              $email = $_POST['email'];
+              $comments = $_POST['comments'];
+
+              $mysqli->query(
+                  " INSERT INTO comments(names,email,comments) VALUES('$names', '$email', '$comments') "
+                  )  or die($mysqli->error);
+
+          }
+          ?>
       <div class="col-sm-7">
-        <form action="includes/functions/contact_process.php" method="POST">
-            <?php require_once 'includes/functions/contact_process.php'; ?>
+        <form action="index.php" method="POST">
           <div class="row">
             <div class="col-sm-6 form-group">
               <input class="form-control"  name="names" placeholder="Names" type="text" required>

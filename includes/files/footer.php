@@ -1,3 +1,5 @@
+
+
 <footer class="container-fluid">
 <div class="row">
 <div class= "col-md-3" >
@@ -51,5 +53,9 @@
                 <a href="#"> <i class="fa fa-linkedin"></i>  </a>
               </p>
 </div>
+
+
 <p> &copy; 2018-2019 All Reserved Under <a href="cranebrands.com" targe="_blank" >CraneBrands</a> </p>
+
 </footer>
+

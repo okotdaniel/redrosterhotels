@@ -29,8 +29,7 @@ class pdo_connect{
 
         }
     }
-    
-    
+ 
 }
     $object = new pdo_connect();
      

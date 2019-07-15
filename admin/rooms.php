@@ -18,13 +18,23 @@
                     <div class="col-md-12">
                         <div class="card">
                             <div class="header">
-                                <h4 class="title">Light Bootstrap Table Heading</h4>
-                                <p class="category">Created using Roboto Font Family</p>
+                                <h2 class="title">Rooms</h2>
+                                <div class="card-body ">
+                                    <a href="#" class="btn-primary btn">Add Rooms </a>
+                                    <a href="#" class="btn-secondary btn">View Rooms </a>
+                                
+                                </div>
                             </div>
                             <div class="content">
 
                                 <div class="typo-line">
-                                    <h1><p class="category">Header 1</p>Light Bootstrap Table Heading </h1>
+                                    <form class="form-group">   
+                                        <input type="text" id="room name" placeholder="Room Name">
+                                        <input type="text" id="room name" placeholder="Room Category">
+                                        <input type="text" id="room name" placeholder="Description">
+                                        
+
+                                    </form>
                                 </div>
 
                                     <div class="typo-line">
