@@ -10,6 +10,8 @@ html{
 }
 .me, .mea{
   color: white;
+  background-color: red;
+  padding: 20px;
 }
 .reserve{
   width: 370px;
